@@ -18,31 +18,32 @@ Livron é uma aplicação web que permite aos usuários gerenciar sua biblioteca
 - **Estilização:** CSS  
 
 ## Estrutura do Projeto
+
 PROJETO-LIVRON-UNIVESP/
 ├── backend/
-│   ├── db/
-│   │   └── database.js
-│   ├── node_modules/
-│   └── src/
-│       └── routes/
-│           └── server.js
+│ ├── db/
+│ │ └── database.js
+│ ├── node_modules/
+│ └── src/
+│ └── routes/
+│ └── server.js
 ├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── LivroCard.jsx
-│   │   │   ├── LivroForm.jsx
-│   │   │   └── SelectedBooks.jsx
-│   │   ├── pages/
-│   │   │   └── Home.js
-│   │   ├── services/
-│   │   │   ├── api.js
-│   │   │   └── cloud.js
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   └── index.js
+│ ├── node_modules/
+│ ├── public/
+│ │ └── index.html
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── LivroCard.jsx
+│ │ │ ├── LivroForm.jsx
+│ │ │ └── SelectedBooks.jsx
+│ │ ├── pages/
+│ │ │ └── Home.js
+│ │ ├── services/
+│ │ │ ├── api.js
+│ │ │ └── cloud.js
+│ │ ├── App.css
+│ │ ├── App.js
+│ │ └── index.js
 ├── .env
 ├── package.json
 └── README.md
