@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Livros - Livron</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f0f0f0; }
+        header { background-color: #4169e1; color: white; padding: 20px; text-align: center; }
+        header h1 { margin: 0; }
+        .welcome { text-align: center; padding: 20px; font-size: 1.2rem; }
+        .livros-lista { max-width: 600px; margin: 10px auto 30px auto; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .livro-item { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #ddd; }
+        .livro-item:last-child { border-bottom: none; }
+        .livro-info { display: flex; align-items: center; }
+        .livro-info img { width: 40px; height: 40px; margin-right: 15px; }
+        .livro-info div { display: flex; flex-direction: column; }
+        .livro-info h3 { margin: 0; font-size: 1rem; color: #4169e1; }
+        .livro-info p { margin: 2px 0; font-size: 0.85rem; }
+        .livro-botoes button { 
+            margin-left: 5px;
+            padding: 5px 10px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            color: white;
+            font-size: 0.85rem;
+        }
+        .editar { background-color: #f39c12; }
+        .excluir { background-color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Livron</h1>
+    </header>
+
+    <div class="welcome">
+        Meus Livros – Estes são os livros que você cadastrou e pode gerenciar.
+    </div>
+
+    <div class="livros-lista">
+        <div class="livro-item">
+            <div class="livro-info">
+                <img src="https://img.icons8.com/ios-filled/50/4169e1/book.png" alt="Livro">
+                <div>
+                    <h3>O Pequeno Príncipe</h3>
+                    <p>Categoria: Infantojuvenil</p>
+                    <p>Autor: Antoine de Saint-Exupéry</p>
+                </div>
+            </div>
+            <div class="livro-botoes">
+                <button class="editar">Editar</button>
+                <button class="excluir">Excluir</button>
+            </div>
+        </div>
+
+        <div class="livro-item">
+            <div class="livro-info">
+                <img src="https://img.icons8.com/ios-filled/50/4169e1/book.png" alt="Livro">
+                <div>
+                    <h3>O Senhor dos Anéis</h3>
+                    <p>Categoria: Fantasia</p>
+                    <p>Autor: J.R.R. Tolkien</p>
+                </div>
+            </div>
+            <div class="livro-botoes">
+                <button class="editar">Editar</button>
+                <button class="excluir">Excluir</button>
+            </div>
+        </div>
+
+        <div class="livro-item">
+            <div class="livro-info">
+                <img src="https://img.icons8.com/ios-filled/50/4169e1/book.png" alt="Livro">
+                <div>
+                    <h3>Sapiens</h3>
+                    <p>Categoria: História</p>
+                    <p>Autor: Yuval Noah Harari</p>
+                </div>
+            </div>
+            <div class="livro-botoes">
+                <button class="editar">Editar</button>
+                <button class="excluir">Excluir</button>
+            </div>
+        </div>
+
+        <div class="livro-item">
+            <div class="livro-info">
+                <img src="https://img.icons8.com/ios-filled/50/4169e1/book.png" alt="Livro">
+                <div>
+                    <h3>O Poder do Hábito</h3>
+                    <p>Categoria: Desenvolvimento Pessoal</p>
+                    <p>Autor: Charles Duhigg</p>
+                </div>
+            </div>
+            <div class="livro-botoes">
+                <button class="editar">Editar</button>
+                <button class="excluir">Excluir</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

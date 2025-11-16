@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livron - Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6CC0FF, #fff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .cadastro-container {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .cadastro-container img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .login-link {
+            margin-top: 12px;
+            color: #555;
+            font-size: 14px;
+        }
+        .login-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="cadastro-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Ícone de livro">
+        <h1>Cadastre-se</h1>
+        <div class="subtitle">Plataforma LivrOn: Sistema Inteligente de Troca Sustentável de Livros</div>
+        <input type="text" placeholder="Nome completo" id="nome">
+        <input type="email" placeholder="Email" id="email">
+        <input type="text" placeholder="Usuário" id="usuario">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="password" placeholder="Confirmar senha" id="senha2">
+        <button id="btnCadastrar">Cadastrar</button>
+        <div class="login-link">
+            Já tem conta? <a href="login.html">Entrar</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('btnCadastrar').addEventListener('click', function(){
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+            const senha2 = document.getElementById('senha2').value;
+
+            if(!nome || !email || !usuario || !senha || !senha2){
+                alert("Preencha todos os campos!");
+                return;
+            }
+
+            if(senha !== senha2){
+                alert("As senhas não conferem!");
+                return;
+            }
+
+            alert("Cadastro simulado: " + usuario);
+            // redirecionar para login
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

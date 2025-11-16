@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - Livron</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4169e1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .pedido-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .livro {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .livro img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .livro-details p {
+            margin: 5px 0;
+        }
+        .codigo-troca {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #4169e1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #365bb0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Livron - Seu Pedido</h1>
+    </header>
+
+    <div class="pedido-container">
+
+
+        <div class="livro">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81dQwQlmAXL.jpg" alt="Pai Rico, Pai Pobre">
+            <div class="livro-details">
+                <h3>Pai Rico, Pai Pobre</h3>
+                <p>Categoria: Finanças</p>
+                <p>Autor: Robert Kiyosaki</p>
+                <p>Quantidade em estoque: 3</p>
+            </div>
+        </div>
+
+        <div class="codigo-troca">
+            <label for="codigo">Código de Troca:</label>
+            <input type="text" id="codigo" placeholder="Digite seu código de troca">
+        </div>
+
+        <button>Finalizar Pedido</button>
+    </div>
+</body>
+</html>

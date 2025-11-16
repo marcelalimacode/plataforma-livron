@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livron</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4169e1; /* Azul Royal */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+
+        .livros-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 livros por linha */
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .livro {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .livro img {
+            width: 150px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .livro h3 {
+            margin: 10px 0 5px;
+            font-size: 1.1rem;
+        }
+
+        .livro p {
+            margin: 3px 0;
+            font-size: 0.9rem;
+        }
+
+        .estoque {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .btn-escolher {
+            padding: 8px 12px;
+            background-color: #4169e1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .btn-escolher:hover {
+            background-color: #3652b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Livron</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Meu Perfil</a>
+        <a href="#">Categorias</a>
+        <a href="#">Favoritos</a>
+        <a href="#">Sair</a>
+    </nav>
+
+    <div class="welcome">
+        Bem-vindo à Livron! Explore, descubra e organize seus livros favoritos.
+    </div>
+
+    <div class="livros-container">
+        <div class="livro">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg" alt="Harry Potter e a Pedra Filosofal">
+            <h3>Harry Potter e a Pedra Filosofal</h3>
+            <p>Categoria: Fantasia</p>
+            <p>Autor: J.K. Rowling</p>
+            <p class="estoque">Estoque: 5</p>
+            <button class="btn-escolher">Escolher</button>
+        </div>
+
+        <div class="livro">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81dQwQlmAXL.jpg" alt="Pai Rico, Pai Pobre">
+            <h3>Pai Rico, Pai Pobre</h3>
+            <p>Categoria: Finanças</p>
+            <p>Autor: Robert Kiyosaki</p>
+            <p class="estoque">Estoque: 8</p>
+            <button class="btn-escolher">Escolher</button>
+        </div>
+
+        <div class="livro">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL.jpg" alt="1984">
+            <h3>1984</h3>
+            <p>Categoria: Distopia</p>
+            <p>Autor: George Orwell</p>
+            <p class="estoque">Estoque: 6</p>
+            <button class="btn-escolher">Escolher</button>
+        </div>
+
+        <div class="livro">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="O Alquimista">
+            <h3>O Alquimista</h3>
+            <p>Categoria: Aventura</p>
+            <p>Autor: Paulo Coelho</p>
+            <p class="estoque">Estoque: 4</p>
+            <button class="btn-escolher">Escolher</button>
+        </div>
+    </div>
+</body>
+</html>
